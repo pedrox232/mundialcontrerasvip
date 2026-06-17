@@ -1,0 +1,901 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendario Mundial</title>
+    <style>
+        *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#ececec;
+    font-family:Arial, Helvetica, sans-serif;
+    padding:10px;
+}
+
+.fixture{
+    max-width:1200px;
+    margin:auto;
+}
+
+.match{
+    display:flex;
+    margin-bottom:2px;
+}
+
+.match-number{
+    width:55px;
+    background:#444;
+    color:#bfff00;
+    font-size:20px;
+    font-weight:bold;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.match-card{
+    flex:1;
+    background:#efefef;
+    border:1px solid #d0d0d0;
+}
+
+.match-date{
+    background:#4a4a4a;
+    color:#bfff00;
+    font-size:18px;
+    font-weight:bold;
+    padding:8px 12px;
+}
+
+.match-content{
+    position:relative;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    gap:50px;
+
+    padding:25px 20px 10px;
+}
+
+.time{
+    position:absolute;
+    left:20px;
+    top:22px;
+
+    font-size:22px;
+    color:#111;
+}
+
+.team{
+    display:flex;
+    align-items:center;
+    gap:12px;
+
+    min-width:250px;
+}
+
+.team.left{
+    justify-content:flex-end;
+}
+
+.team.right{
+    justify-content:flex-start;
+}
+
+.team img{
+    width:40px;
+    height:auto;
+    border:1px solid #ccc;
+}
+
+.team span{
+    font-size:16px;
+    font-weight:600;
+}
+
+.vs{
+    font-size:32px;
+    font-weight:bold;
+    color:#111;
+}
+
+.group{
+    position:absolute;
+    right:20px;
+    top:15px;
+
+    color:#5d7f34;
+    font-weight:bold;
+    text-decoration:underline;
+}
+
+.stadium{
+    text-align:center;
+    padding-bottom:12px;
+    font-size:16px;
+}
+</style>
+</head>
+<body>
+
+<div class="fixture">
+
+    <!-- PARTIDO 1 -->
+    <div class="match">
+        <div class="match-number">1</div>
+
+        <div class="match-card">
+
+            <div class="match-date">
+                Jueves 11 de Junio
+            </div>
+
+            <div class="match-content">
+
+                <div class="time">16:00</div>
+
+                <div class="team left">
+                    <img src="https://flagcdn.com/w40/mx.png" alt="México">
+                    <span>MÉXICO</span>
+                </div>
+
+                <div class="vs">VS</div>
+
+                <div class="team right">
+                    <span>SUDÁFRICA</span>
+                    <img src="https://flagcdn.com/w40/za.png" alt="Sudáfrica">
+                </div>
+
+                <div class="group">Grupo A</div>
+
+            </div>
+
+            <div class="stadium">
+                Estadio Ciudad de México
+            </div>
+
+        </div>
+    </div>
+
+    <!-- PARTIDO 2 -->
+    <div class="match">
+        <div class="match-number">2</div>
+
+        <div class="match-card">
+
+            <div class="match-date">
+                Jueves 11 de Junio
+            </div>
+
+            <div class="match-content">
+
+                <div class="time">23:00</div>
+
+                <div class="team left">
+                    <img src="https://flagcdn.com/w40/kr.png">
+                    <span>COREA DEL SUR</span>
+                </div>
+
+                <div class="vs">VS</div>
+
+                <div class="team right">
+                    <span>REP. CHECA</span>
+                    <img src="https://flagcdn.com/w40/cz.png">
+                </div>
+
+                <div class="group">Grupo A</div>
+
+            </div>
+
+            <div class="stadium">
+                Estadio Guadalajara
+            </div>
+
+        </div>
+    </div>
+<div class="match">
+    <div class="match-number">3</div>
+
+    <div class="match-card">
+
+        <div class="match-date">
+            Viernes 12 de Junio
+        </div>
+
+        <div class="match-content">
+
+            <div class="time">16:00</div>
+
+            <div class="team left">
+                <img src="https://flagcdn.com/w40/ca.png">
+                <span>CANADÁ</span>
+            </div>
+
+            <div class="vs">VS</div>
+
+            <div class="team right">
+                <span>Bosnia y Herzeg.</span>
+                <img src="https://flagcdn.com/w40/ba.png">
+            </div>
+
+            <a href="GrupoB.html"><div class="group">Grupo B</div></a>
+
+        </div>
+
+        <div class="stadium">
+            Estadio Toronto
+        </div>
+
+    </div>
+</div>
+
+
+<div class="match">
+    <div class="match-number">4</div>
+
+    <div class="match-card">
+
+        <div class="match-date">
+            Viernes 12 de Junio
+        </div>
+
+        <div class="match-content">
+
+            <div class="time">22:00</div>
+
+            <div class="team left">
+                <img src="https://flagcdn.com/w40/us.png">
+                <span>EE.UU</span>
+            </div>
+
+            <div class="vs">VS</div>
+
+            <div class="team right">
+                <span>PARAGUAY</span>
+                <img src="https://flagcdn.com/w40/py.png">
+            </div>
+
+            <a href="GrupoD.html"><div class="group">Grupo D</div></a>
+
+        </div>
+
+        <div class="stadium">
+            Estadio Los Ángeles
+        </div>
+
+    </div>
+</div>
+
+
+<div class="match">
+    <div class="match-number">5</div>
+
+    <div class="match-card">
+
+        <div class="match-date">
+            Sabado 13 de Junio
+        </div>
+
+        <div class="match-content">
+
+            <div class="time">16:00</div>
+
+            <div class="team left">
+                <img src="https://flagcdn.com/w40/qa.png">
+                <span>CATAR</span>
+            </div>
+
+            <div class="vs">VS</div>
+
+            <div class="team right">
+                <span>SUIZA</span>
+                <img src="https://flagcdn.com/w40/ch.png">
+            </div>
+
+            <a href="GrupoB.html"><div class="group">Grupo B</div></a>
+
+        </div>
+
+        <div class="stadium">
+            Estadio San Francisco
+        </div>
+
+    </div>
+</div>
+
+
+<div class="match">
+    <div class="match-number">6</div>
+
+    <div class="match-card">
+
+        <div class="match-date">
+            Sabado 13 de Junio
+        </div>
+
+        <div class="match-content">
+
+            <div class="time">19:00</div>
+
+            <div class="team left">
+                <img src="https://flagcdn.com/w40/br.png">
+                <span>BRASIL</span>
+            </div>
+
+            <div class="vs">VS</div>
+
+            <div class="team right">
+                <span>MARRUECOS</span>
+                <img src="https://flagcdn.com/w40/ma.png">
+            </div>
+
+            <a href="GrupoD.html"><div class="group">Grupo D</div></a>
+
+        </div>
+
+        <div class="stadium">
+            Estadio Nueva York/Nueva Jersey			
+
+        </div>
+
+    </div>
+</div>
+
+<div class="match">
+    <div class="match-number">7</div>
+
+    <div class="match-card">
+
+        <div class="match-date">
+            Sabado 13 de Junio
+        </div>
+
+        <div class="match-content">
+
+            <div class="time">22:00</div>
+
+            <div class="team left">
+                <img src="https://flagcdn.com/w40/ht.png">
+                <span>HAITI</span>
+            </div>
+
+            <div class="vs">VS</div>
+
+            <div class="team right">
+                <span>ESCOCIA</span>
+                <img src="https://flagcdn.com/w40/gb-sct.png">
+            </div>
+
+           <a href="GrupoC.html"><div class="group">Grupo C</div></a>
+
+        </div>
+
+        <div class="stadium">
+            Estadio Boston		
+
+        </div>
+
+    </div>
+</div>
+
+<div class="match">
+    <div class="match-number">8</div>
+
+    <div class="match-card">
+
+        <div class="match-date">
+            Domingo 14 de Junio
+        </div>
+
+        <div class="match-content">
+
+            <div class="time">1:00</div>
+
+            <div class="team left">
+                <img src="https://flagcdn.com/w40/au.png">
+                <span>AUSTRALIA</span>
+            </div>
+
+            <div class="vs">VS</div>
+
+            <div class="team right">
+                <span>TURQUÍA</span>
+                <img src="https://flagcdn.com/w40/tr.png">
+            </div>
+
+            <a href="GrupoD.html"><div class="group">Grupo D</div></a>
+
+        </div>
+
+        <div class="stadium">
+            Estadio Vancouver		
+
+        </div>
+
+    </div>
+</div>
+
+<div class="match">
+    <div class="match-number">9</div>
+
+    <div class="match-card">
+
+        <div class="match-date">
+            Domingo 14 de Junio
+        </div>
+
+        <div class="match-content">
+
+            <div class="time">14:00</div>
+
+            <div class="team left">
+                <img src="https://flagcdn.com/w40/de.png">
+                <span>ALEMANIA</span>
+            </div>
+
+            <div class="vs">VS</div>
+
+            <div class="team right">
+                <span>CURAZAO</span>
+                <img src="https://flagcdn.com/w40/cw.png">
+            </div>
+
+            <a href="GrupoE.html"><div class="group">Grupo E</div></a>
+
+        </div>
+
+        <div class="stadium">
+            Estadio Houston		
+
+        </div>
+
+    </div>
+</div>
+
+<div class="match">
+    <div class="match-number">10</div>
+
+    <div class="match-card">
+
+        <div class="match-date">
+            Domingo 14 de Junio
+        </div>
+
+        <div class="match-content">
+
+            <div class="time">17:00</div>
+
+            <div class="team left">
+                <img src="https://flagcdn.com/w40/nl.png">
+                <span>PAÍSES BAJOS</span>
+            </div>
+
+            <div class="vs">VS</div>
+
+            <div class="team right">
+                <span>JAPÓN</span>
+                <img src="https://flagcdn.com/w40/jp.png">
+            </div>
+
+            <a href="GrupoF.html"><div class="group">Grupo F</div></a>
+
+        </div>
+
+        <div class="stadium">
+            Estadio Dallas
+
+        </div>
+
+    </div>
+</div>
+
+<div class="match">
+    <div class="match-number">11</div>
+
+    <div class="match-card">
+
+        <div class="match-date">
+            Domingo 14 de Junio
+        </div>
+
+        <div class="match-content">
+
+            <div class="time">20:00</div>
+
+            <div class="team left">
+                <img src="https://flagcdn.com/w40/ci.png">
+                <span>COSTA DE MARFIL</span>
+            </div>
+
+            <div class="vs">VS</div>
+
+            <div class="team right">
+                <span>ECUADOR</span>
+                <img src="https://flagcdn.com/w40/ec.png">
+            </div>
+
+            <a href="GrupoE.html"><div class="group">Grupo E</div></a>
+
+        </div>
+
+        <div class="stadium">
+            Estadio Filadelfia
+        </div>
+
+    </div>
+</div>
+
+<div class="match">
+    <div class="match-number">12</div>
+
+    <div class="match-card">
+
+        <div class="match-date">
+            Domingo 14 de Junio
+        </div>
+
+        <div class="match-content">
+
+            <div class="time">23:00</div>
+
+            <div class="team left">
+                <img src="https://flagcdn.com/w40/se.png">
+                <span>SUECIA</span>
+            </div>
+
+            <div class="vs">VS</div>
+
+            <div class="team right">
+                <span>Túnez</span>
+                <img src="https://flagcdn.com/w40/tn.png">
+            </div>
+
+            <a href="GrupoE.html"><div class="group">Grupo E</div></a>
+
+        </div>
+
+        <div class="stadium">
+            Estadio Monterrey
+        </div>
+
+    </div>
+</div>
+
+<div class="match">
+    <div class="match-number">13</div>
+
+    <div class="match-card">
+
+        <div class="match-date">
+            Lunes 15 de Junio
+        </div>
+
+        <div class="match-content">
+
+            <div class="time">13:00</div>
+
+            <div class="team left">
+                <img src="https://flagcdn.com/w40/es.png">
+                <span>ESPAÑA</span>
+            </div>
+
+            <div class="vs">VS</div>
+
+            <div class="team right">
+                <span>CABO VERDE</span>
+                <img src="https://flagcdn.com/w40/cv.png">
+            </div>
+
+            <a href="GrupoH.html"><div class="group">Grupo H</div></a>
+
+        </div>
+
+        <div class="stadium">
+            Estadio Atlanta
+        </div>
+
+    </div>
+</div>
+
+<div class="match">
+    <div class="match-number">14</div>
+
+    <div class="match-card">
+
+        <div class="match-date">
+            Lunes 15 de Junio
+        </div>
+
+        <div class="match-content">
+
+            <div class="time">16:00</div>
+
+            <div class="team left">
+                <img src="https://flagcdn.com/w40/be.png">
+                <span>BELGICA</span>
+            </div>
+
+            <div class="vs">VS</div>
+
+            <div class="team right">
+                <span>EGIPTO</span>
+                <img src="https://flagcdn.com/w40/eg.png">
+            </div>
+
+            <a href="GrupoG.html"><div class="group">Grupo G</div></a>
+
+        </div>
+
+        <div class="stadium">
+            Estadio Seattle
+        </div>
+
+    </div>
+</div>
+
+<div class="match">
+    <div class="match-number">15</div>
+
+    <div class="match-card">
+
+        <div class="match-date">
+            Lunes 15 de Junio
+        </div>
+
+        <div class="match-content">
+
+            <div class="time">19:00</div>
+
+            <div class="team left">
+                <img src="https://flagcdn.com/w40/sa.png">
+                <span>ARABIA SAUDITA</span>
+            </div>
+
+            <div class="vs">VS</div>
+
+            <div class="team right">
+                <span>URUGUAY</span>
+                <img src="https://flagcdn.com/w40/uy.png">
+            </div>
+
+            <a href="GrupoH.html"><div class="group">Grupo H</div></a>
+
+        </div>
+
+        <div class="stadium">
+            Estadio Miami
+        </div>
+
+    </div>
+</div>
+
+<div class="match">
+    <div class="match-number">16</div>
+
+    <div class="match-card">
+
+        <div class="match-date">
+            Lunes 15 de Junio
+        </div>
+
+        <div class="match-content">
+
+            <div class="time">22:00</div>
+
+            <div class="team left">
+                <img src="https://flagcdn.com/w40/ir.png">
+                <span>IRÁN</span>
+            </div>
+
+            <div class="vs">VS</div>
+
+            <div class="team right">
+                <span>NUEVA ZELANDA</span>
+                <img src="https://flagcdn.com/w40/nz.png">
+            </div>
+
+            <a href="GrupoG.html"><div class="group">Grupo G</div></a>
+
+        </div>
+
+        <div class="stadium">
+            Estadio Los Angeles
+        </div>
+
+    </div>
+</div>
+
+<div class="match">
+    <div class="match-number">17</div>
+
+    <div class="match-card">
+
+        <div class="match-date">
+            Martes 16 de Junio
+        </div>
+
+        <div class="match-content">
+
+            <div class="time">16:00</div>
+
+            <div class="team left">
+                <img src="https://flagcdn.com/w40/fr.png">
+                <span>FRANCIA</span>
+            </div>
+
+            <div class="vs">VS</div>
+
+            <div class="team right">
+                <span>SENEGAL</span>
+                <img src="https://flagcdn.com/w40/sn.png">
+            </div>
+
+            <a href="GrupoI.html"><div class="group">Grupo I</div></a>
+
+        </div>
+
+        <div class="stadium">
+            Estadio Nueva York
+        </div>
+
+    </div>
+</div>
+
+<div class="match">
+    <div class="match-number">18</div>
+
+    <div class="match-card">
+
+        <div class="match-date">
+            Martes 16 de Junio
+        </div>
+
+        <div class="match-content">
+
+            <div class="time">19:00</div>
+
+            <div class="team left">
+                <img src="https://flagcdn.com/w40/iq.png">
+                <span>IRAK</span>
+            </div>
+
+            <div class="vs">VS</div>
+
+            <div class="team right">
+                <span>NORUEGA</span>
+                <img src="https://flagcdn.com/w40/no.png">
+            </div>
+
+            <a href="GrupoI.html"><div class="group">Grupo I</div></a>
+
+        </div>
+
+        <div class="stadium">
+            Estadio Boston
+        </div>
+
+    </div>
+</div>
+
+<div class="match">
+    <div class="match-number">19</div>
+
+    <div class="match-card">
+
+        <div class="match-date">
+            Martes 16 de Junio
+        </div>
+
+        <div class="match-content">
+
+            <div class="time">22:00</div>
+
+            <div class="team left">
+                <img src="https://flagcdn.com/w40/ar.png">
+                <span>ARGENTINA</span>
+            </div>
+
+            <div class="vs">VS</div>
+
+            <div class="team right">
+                <span>ARGELIA</span>
+                <img src="https://flagcdn.com/w40/dz.png">
+            </div>
+                <a href="https://trece.com.py/en-vivo/"><img src="trece.jpg" width="40"px height="30px"></a>
+            <a href="GrupoJ.html"><div class="group">Grupo J</div></a>
+
+        </div>
+
+        <div class="stadium">
+            Estadio Kansas City
+        </div>
+
+    </div>
+</div>
+
+<div class="match">
+    <div class="match-number">20</div>
+
+    <div class="match-card">
+
+        <div class="match-date">
+            Miercoles 17 de Junio
+        </div>
+
+        <div class="match-content">
+
+            <div class="time">1:00</div>
+
+            <div class="team left">
+                <img src="https://flagcdn.com/w40/at.png">
+                <span>AUSTRIA</span>
+            </div>
+
+            <div class="vs">VS</div>
+
+            <div class="team right">
+                <span>JORDANIA</span>
+                <img src="https://flagcdn.com/w40/jo.png">
+            </div>
+                <a href="https://no.gendigi.net/"><img src="gen.jpg" width="30"px height="30px"></a></br>
+                <a href="https://trece.com.py/en-vivo/"><img src="trece.jpg" width="40"px height="30px"></a>
+            <a href="GrupoJ.html"><div class="group">Grupo J</div></a>
+
+        </div>
+
+        <div class="stadium">
+            Estadio San Francisco
+        </div>
+
+    </div>
+</div>
+
+<div class="match">
+    <div class="match-number">21</div>
+
+    <div class="match-card">
+
+        <div class="match-date">
+            Miercoles 17 de Junio
+        </div>
+
+        <div class="match-content">
+
+            <div class="time">14:00</div>
+
+            <div class="team left">
+                <img src="https://flagcdn.com/w40/pt.png">
+                <span>PORTUGAL</span>
+            </div>
+
+            <div class="vs">VS</div>
+
+            <div class="team right">
+                <span>REP. DEL CONGO</span>
+                <img src="https://flagcdn.com/w40/cd.png">
+            </div>
+            <a href="https://no.gendigi.net/"><img src="gen.jpg" width="30"px height="30px"></a>
+            <a href="GrupoK.html"><div class="group">Grupo K</div></a>
+
+        </div>
+
+        <div class="stadium">
+            Estadio Houston
+        </div>
+
+    </div>
+</div>
+    <!-- DUPLICAR HASTA EL PARTIDO 70 -->
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+
+<title>ContrerasVip</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+<style>
+    /* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Centrado total de la página */
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+    padding: 20px;
+}
+
+/* Contenedor */
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Enlace */
+.banner-link {
+    display: block;
+    text-decoration: none;
+}
+
+/* Imagen responsive */
+.banner-img {
+    display: block;
+    width: 100%;
+    max-width: 380px; /* ancho máximo del banner */
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+/* Efecto hover */
+.banner-link:hover .banner-img {
+    transform: scale(1.02);
+}
+
+/* Ajustes para móviles */
+@media (max-width: 480px) {
+    .banner-img {
+        max-width: 95vw;
+    }
+}
+.contenedor{
+    display:flex;
+    align-items:flex-start;
+    gap:30px;
+}
+
+
+.contenido{
+    flex:1;
+}
+
+h1{
+    font-size:50px;
+    font-weight:700;
+    color:#000;
+    margin-bottom:25px;
+}
+
+.grupos{
+    display:flex;
+    flex-wrap:wrap;
+    gap:12px;
+}
+
+.btn-grupo{
+    width:56px;
+    height:56px;
+    background:#cfcfcf;
+    color:#000;
+    text-decoration:none;
+    font-size:24px;
+    font-weight:bold;
+    border-radius:8px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    transition:all .3s ease;
+}
+
+.btn-grupo:hover{
+    background:#b8b8b8;
+    transform:translateY(-2px);
+}
+
+.btn-grupo.activo{
+    background:#c6e600;
+}
+h1{
+    background-color: #047931;
+}
+</style>
+<body> 
+<div class="container">
+        <a href="grupos/Partidos.html" target="_blank" class="banner-link">
+            <img src="img/logo.png" alt="Contreras VIP FIFA World Cup 26" class="banner-img">
+        </a>
+    </div>
+    
+
+    <div class="contenido">
+        <h1>Fase de Grupos</h1>
+
+        <div class="grupos">
+            <a href="GrupoA.html" class="btn-grupo">A</a>
+            <a href="GrupoB.html" class="btn-grupo">B</a>
+            <a href="GrupoC.html" class="btn-grupo">C</a>
+            <a href="GrupoD.html" class="btn-grupo">D</a>
+            <a href="GrupoE.html" class="btn-grupo">E</a>
+            <a href="GrupoF.html" class="btn-grupo">F</a>
+            <a href="GrupoG.html" class="btn-grupo">G</a>
+            <a href="GrupoH.html" class="btn-grupo">H</a>
+            <a href="GrupoI.html" class="btn-grupo">I</a>
+            <a href="GrupoJ.html" class="btn-grupo">J</a>
+            <a href="GrupoK.html" class="btn-grupo">K</a>
+            <a href="GrupoL.html" class="btn-grupo">L</a>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
+   </body> 
